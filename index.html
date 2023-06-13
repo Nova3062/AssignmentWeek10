@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- <link rel="styles" href="styles.css"> -->
+</head>
+
+<body class="container">
+    <h1 class="container-fluid container-success container-sm text-center alert alert-dark">Travel Across the Galaxy
+      </h1>
+      <div class="text-center">
+        <img src="https://cdn.wccftech.com/wp-content/uploads/2016/09/spacee.jpg" class="figure-img rounded mx-auto d-block" height="500px" >
+      </div>
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">Trip Date</label>
+                        <input type="date" class="form-control" id="new-start-date" placeholder='date here' required/>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-end-date">Return Date</label>
+                        <input type="date" class="form-control" id="new-end-date" required/>
+                    </div>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-task">Desired Trip</label>
+                        <input type="text" class="form-control" id="new-task" placeholder="Enter Your Task">
+                    </div>
+                </div>
+            </div><br>
+            <div>
+                <button id="add" class="btn btn-success from-control">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <div>
+    <table id="list" class="table table-light table-striped">
+        <tr>
+            <th>Trip</th>
+            <th>Date Created</th>
+            <th>Start Date</th>
+            <th>Due Date</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+    </div>
+
+
+    <script src="todo.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>  
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>  
+</body>
+</html>
